@@ -1,5 +1,5 @@
 ; ZA = (11XA/6) - 5YA 
-; XA - 16 битово, YA – - битово със знам, ZA - 2 байтово
+; XA - 16 Р±РёС‚РѕРІРѕ, YA - Р±РёС‚РѕРІРѕ СЃСЉСЃ Р·РЅР°Рј, ZA - 2 Р±Р°Р№С‚РѕРІРѕ
 
 .DATA   ; VARIABLES IN HEAP
         ZA      DW ?
@@ -17,6 +17,6 @@ MAIN    PROC
         MOV     AL,YA   ;   AX = YA
         MOV     BX,5    ;   BX = 5
         IMUL    BX      ;   AX = YA * 5
-        SBB     CX,AX   ;   CX = ((11*XA)/6) – (5*YA)
+        SBB     CX,AX   ;   CX = ((11*XA)/6) - (5*YA)
         MOV     ZA,CX   ;   ZA = CX
     RET

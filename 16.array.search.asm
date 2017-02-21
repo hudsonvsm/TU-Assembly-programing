@@ -1,6 +1,6 @@
-; М е едномерен масив от байтове, завършващ с байта 0. Напишете
-; процедура, която добавя в края му символи от регистъра AL, ако този символ
-; липсва в масива. Новият масив също да завършва с нулев байт.
+; Рњ Рµ РµРґРЅРѕРјРµСЂРµРЅ РјР°СЃРёРІ РѕС‚ Р±Р°Р№С‚РѕРІРµ, Р·Р°РІСЉСЂС€РІР°С‰ СЃ Р±Р°Р№С‚Р° 0. РќР°РїРёС€РµС‚Рµ
+; РїСЂРѕС†РµРґСѓСЂР°, РєРѕСЏС‚Рѕ РґРѕР±Р°РІСЏ РІ РєСЂР°СЏ РјСѓ СЃРёРјРІРѕР»Рё РѕС‚ СЂРµРіРёСЃС‚СЉСЂР° AL, Р°РєРѕ С‚РѕР·Рё СЃРёРјРІРѕР»
+; Р»РёРїСЃРІР° РІ РјР°СЃРёРІР°. РќРѕРІРёСЏС‚ РјР°СЃРёРІ СЃСЉС‰Рѕ РґР° Р·Р°РІСЉСЂС€РІР° СЃ РЅСѓР»РµРІ Р±Р°Р№С‚.
 
 .DATA   ; VARIABLES IN HEAP
         ARR     DB      1,2,3,4,5,6,7,8,9,10,0
@@ -11,7 +11,7 @@ SRCH:
         CMP     AL,ARR[BX]      ; AL == ARR[INDEX]
         JE      BREAK           ; IF TRUE RETURN
         INC     BX              ; BX = BX + 1 OR BX++
-        CMP     ARR[BX-1],0     ; BX-1 == 0 (MINUS 1 BECAUSE ALLREADY INCREMENTED)
+        CMP     ARR[BX-1],0     ; BX-1 == 0     (MINUS 1 BECAUSE ALLREADY INCREMENTED)
         JNE     SRCH            ; IF NOT TRUE GO TO SRCH
         MOV     ARR[BX],AL      ; IF INT NOT FOUND LAST INDEX == AL
         MOV     ARR[BX+1],0     ; MAKE NEW NULL POINTER AFTER LAST INDEX
