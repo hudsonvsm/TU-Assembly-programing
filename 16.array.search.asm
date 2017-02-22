@@ -3,7 +3,7 @@
 ; липсва в масива. Новият масив също да завършва с нулев байт.
 
 .DATA   ; VARIABLES IN HEAP
-        ARR     DB      1,2,3,4,5,6,7,8,9,10,0
+        ARR     DB      1,2,3,4,5,6,7,8,9,10,0  ; NULL TERMINATED
 .CODE
 MAIN    PROC
         MOV     BX,0            ; BX = 0

@@ -4,11 +4,11 @@
 
 ;   [S12+BX] == S12[BX] IS THE SAME THING USED BOTH VARIATIONS FOR LEARNING PURPOSES
 
-.DATA   ; VARIABLES IN HEAP
+.DATA                               ; VARIABLES IN HEAP
         S1      DB      'EXAMPLE'
-        COUNT1  =   ($ - S1)
+        COUNT1  =   ($ - S1)        ; ($ IS END OF S2) (S2 IS THE BEGINIG) 
         S2      DB      ' STRING'
-        COUNT2  =   ($ - S2)
+        COUNT2  =   ($ - S2)        ; ($ IS END OF S2) (S2 IS THE BEGINIG) 
         S12     DB      '              ',0 ; THIS STRING IS NULL TREMINATED (,0)
 .CODE
 MAIN    PROC

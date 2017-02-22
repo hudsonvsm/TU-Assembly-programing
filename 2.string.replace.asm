@@ -6,9 +6,9 @@
 
 .DATA   ; VARIABLES IN HEAP
         S1      DB     'EXAM PLE',0 ; NULL TERMINATED STRING
-        COUNT1  =   ($ - S1)
+        COUNT1  =   ($ - S1)        ; ($ IS END OF S1) (S1 IS THE BEGINIG) 
         S2      DB     'EXAMPLEs',0 ; NULL TERMINATED STRING
-        COUNT2  =   ($ - S2)
+        COUNT2  =   ($ - S2)        ; ($ IS END OF S2) (S2 IS THE BEGINIG) 
 .CODE
 MAIN    PROC
         MOV     BX,0                ; BX = 0

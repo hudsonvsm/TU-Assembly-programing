@@ -1,5 +1,6 @@
 ;XA = (AA*2 + BA*CA)/(DA - 3)
-.DATA
+
+.DATA                   ; VARIABLES IN HEAP
         XA   DW ?
         AA   DW 2
         BA   DW 3

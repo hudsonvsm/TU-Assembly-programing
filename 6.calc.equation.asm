@@ -1,7 +1,7 @@
 ; ZA = (11XA/6) - 5YA 
 ; XA - 16 битово, YA - битово със знам, ZA - 2 байтово
 
-.DATA   ; VARIABLES IN HEAP
+.DATA                   ; VARIABLES IN HEAP
         ZA      DW ?
         XA      DW 7
         YA      DB 3
